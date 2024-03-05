@@ -228,7 +228,7 @@ const ChartComponent = () => {
         if (chartRef.current && chartRef.current.data) {
             for (let i = 1; i <= games; i++) {
                 console.log(i)
-                await sleep(500)
+                await sleep(300)
                 chartRef.current.data.labels?.push(i)
                 if (renderObj?.over) {
                     renderObj['over'].data.push(graphData?.overList?.[i - 1] || 0)
